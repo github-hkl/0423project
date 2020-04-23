@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  user-select: none;
+}
+#app {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #303133;
+}
+li {
+  list-style: none;
+}
+body {
+  background: #f5f7f9;
+}
+.box header {
+  background: #fff;
+  border-bottom: 1px solid #DCDFE6;
+}
+.box header .topBar {
+  max-width: 1350px;
+  min-width: 380px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.box header .topBar .info {
+  letter-spacing: 1px;
+}
+.box header .topBar .operate {
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.box header .topBar .operate li {
+  margin-left: 25px;
+}
+.box main {
+  min-height: 600px;
+}
+.box footer {
+  text-align: center;
+  color: #909399;
+}

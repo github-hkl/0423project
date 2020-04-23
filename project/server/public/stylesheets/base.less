@@ -1,0 +1,61 @@
+@import "fun";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: @font_size_level4;
+    user-select: none;
+}
+
+#app {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: @font_color_level1;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: @gray_level5;
+}
+
+
+.box {
+    header {
+        background: @white;
+        .border(bottom);
+
+        .topBar {
+            .limitWidth();
+            margin: 0 auto;
+            height: 50px;
+            .flex();
+
+            .info {
+                letter-spacing: 1px;
+            }
+
+            .operate {
+                .flex();
+
+                li {
+                    margin-left: @base_padding_margin*5;
+                }
+            }
+        }
+    }
+
+    main {
+        min-height: 600px;
+    }
+
+    footer {
+        text-align: center;
+        color: @font_color_level3;
+    }
+}

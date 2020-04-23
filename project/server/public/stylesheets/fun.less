@@ -1,0 +1,58 @@
+@import "var";
+
+.baseShadow() {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+
+.lightShadow() {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.border(@dir:bottom,@color:@gray_level1) {
+    border-@{dir}: 1px solid @color;
+}
+
+.flex(@justify: space-between,@align-items:center) {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: @align-items;
+    justify-content: @justify;
+    align-content: flex-start;
+}
+
+.wrap(@wrap:wrap) {
+    flex-wrap: @wrap;
+}
+
+.justify(@justify:flex-start) {
+    justify-content: @justify;
+}
+
+.textOverflow() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.textOverflowRow(@num) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @num;
+    -webkit-box-orient: vertical;
+}
+
+.buttonInputStyle() {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #DCDFE6;
+    border-radius: 100px;
+    min-height: 40px;
+    outline: none;
+    padding: 0 @base_padding_margin*2;
+}
+
+.limitWidth() {
+    max-width: @max_width;
+    min-width: @min_width;
+}
